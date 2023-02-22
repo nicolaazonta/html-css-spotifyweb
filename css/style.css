@@ -9,6 +9,9 @@
 a{
     text-decoration: none;
 }
+img{
+    max-width: 100%;
+}
 :root{
     --bg-banner: #080b1270;
     --bg-sidebar: #000000;
@@ -85,8 +88,6 @@ a{
     background-color: var(--bg-content);
     width: calc(100% - 50px);
     overflow-y:auto;
-    display: flex;
-    flex-direction: column;
     color: var(--text-1-content);
 }
 #banner{
@@ -115,13 +116,27 @@ a{
     justify-content: center;
     text-align: center;
 }
-.content_menu .card{
-    padding: .3rem 0;
+.recently_section h2{
+    color: white;
+    margin-left: .5rem;
+}
+.disc_card{
+    font-size: .6rem;
+    padding: .4rem;
     margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.recently_section .card{
-    height: 30px;
+.disc_card .song,.artist{
+    padding-top: .3rem;
 }
+.disc_card .song{
+    color: var(--text-light);
+}
+
+
+
 
 
 
