@@ -23,7 +23,7 @@
 /* #endregion--------commons */
 
 /* #region--------utilities */
-.dash{border: 2px dashed var(--bg-stabilo);}
+.dash{border: 1px dashed var(--bg-stabilo);}
 .display_flex{
     display: flex;
 }
@@ -41,7 +41,7 @@
 /* #region--------content */
 #content{
     background-color: var(--bg-content);
-    width: calc(100% - 70px);
+    width: calc(100% - 42px);
     overflow: hidden;
     display: flex;
 }
@@ -58,14 +58,14 @@
 /* #region--------sidebar */
 #sidebar{
     background-color: var(--bg-sidebar);
-    width: 70px;
+    width: 50px;
     overflow-y: auto;
 }
 #sidebar > .sidebar_top{
-    height: calc(100% - 30px);
+    height: calc(100% - 43px);
 }
 #sidebar > .sidebar_bottom{
-    height: 30px;
+    height: 43px;
 }
 /* #endregion--------sidebar */
 
@@ -74,7 +74,7 @@
 /* #region--------actionbar */
 #actionbar{
     background-color: var(--bg-actionbar);
-    height: 50px;
+    height: 42px;
 }
 /* #endregion--------actionbar */
 
@@ -92,7 +92,18 @@
 
 /* #region--------mediaquery */
 @media screen and (min-width:639px){/* -- small -- */
-    
+    #topsection{
+        height: calc(100vh - 50px);
+    }
+    #content{
+        width: calc(100% - 230px);
+    }
+    #sidebar{
+        width: 230px;
+    }
+    #sidebar > .sidebar_top{
+        height: calc(100% - 30px);
+    }    
 }
 
 @media screen and (min-width:878px){/* -- medium -- */
@@ -109,7 +120,7 @@
 /* #endregion--------mediaquery */
 
 
-
+ 
 
 
 
