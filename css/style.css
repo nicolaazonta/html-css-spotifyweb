@@ -32,17 +32,15 @@
 
 /* #region--------topsection */
 #topsection{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 42px);
     display: flex;
-}
-
-
+}   
 
 /* #region--------content */
 #content{
     background-color: var(--bg-content);
-    width: calc(100% - 42px);
-    overflow: hidden;
+    width: calc(100% - 50px);
+    overflow-y:auto;
     display: flex;
 }
 /* #region--------banner */
@@ -59,7 +57,7 @@
 #sidebar{
     background-color: var(--bg-sidebar);
     width: 50px;
-    overflow-y: auto;
+    overflow:hidden;
 }
 #sidebar > .sidebar_top{
     height: calc(100% - 43px);
@@ -92,18 +90,13 @@
 
 /* #region--------mediaquery */
 @media screen and (min-width:639px){/* -- small -- */
-    #topsection{
-        height: calc(100vh - 50px);
-    }
     #content{
         width: calc(100% - 230px);
     }
     #sidebar{
         width: 230px;
     }
-    #sidebar > .sidebar_top{
-        height: calc(100% - 30px);
-    }    
+      
 }
 
 @media screen and (min-width:878px){/* -- medium -- */
