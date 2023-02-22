@@ -83,17 +83,30 @@
 
 
 
-/* #region--------commons */
-/* #endregion--------commons */
+/* #region--------__________ */
+/* #endregion--------__________ */
 
-/* #region--------commons */
-/* #endregion--------commons */
 
-/* #region--------commons */
-/* #endregion--------commons */
 
-/* #region--------commons */
-/* #endregion--------commons */
+
+
+/* #region--------mediaquery */
+@media screen and (min-width:639px){/* -- small -- */
+    
+}
+
+@media screen and (min-width:878px){/* -- medium -- */
+    
+}
+
+@media screen and (min-width:1440px){/* -- large -- */
+    
+}
+
+
+
+
+/* #endregion--------mediaquery */
 
 
 
