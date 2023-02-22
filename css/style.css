@@ -89,22 +89,23 @@ a{
     flex-direction: column;
     color: var(--text-1-content);
 }
-#content > .banner{
+#banner{
     background-color: var(--bg-banner);
     height: 50px;
     width: 100%;
     display: grid;
 }
-#content .banner .button{
+#content #banner .button{
     border: 1px solid var(--text-light);
     color: var(--text-light);
     border-radius: 2rem;
-    padding: .6rem 1.8rem;
+    padding: .4rem 1.5rem;
     margin-right: .5rem;
     align-self: center;
     justify-self: flex-end;
+    font-size: .7rem;
 }
-#content .menu_content{
+#main_content{
     height: calc(100% - 50px);
     overflow-y: auto;
     font-size: .5rem;
@@ -114,10 +115,12 @@ a{
     justify-content: center;
     text-align: center;
 }
-.menu_content .card{
+.content_menu .card{
     padding: .3rem 0;
-    margin-bottom: 1rem;
-
+    margin-bottom: .5rem;
+}
+.recently_section .card{
+    height: 30px;
 }
 
 
