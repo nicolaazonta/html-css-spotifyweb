@@ -5,7 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Circular Std', sans-serif;
-    font-size: .7rem;
+    font-size: .85rem;
 }
 a{
     text-decoration: none;
@@ -37,7 +37,7 @@ a{
 
 /* #region--------topsection */
 #topsection{
-    height: calc(100vh - 42px);
+    height: calc(100vh - 68px);
     display: flex;
 }   
 
@@ -47,14 +47,15 @@ a{
     width: calc(100% - 50px);
     overflow-y:auto;
     display: flex;
+    flex-direction: column;
+    color: var(--text-1-content);
+
 }
-/* #region--------banner */
 #content > .banner{
     background-color: var(--bg-banner);
-    align-self: flex-start;
-    display: grid;
-    width: 100%;
     height: 50px;
+    width: 100%;
+    display: grid;
 }
 #content .banner .button{
     border: 1px solid var(--text-light);
@@ -65,7 +66,14 @@ a{
     align-self: center;
     justify-self: flex-end;
 }
-/* #endregion--------banner */
+#content .main_content{
+    height: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+
+
+
 /* #endregion--------content */
 
 /* #region--------sidebar */
@@ -87,7 +95,7 @@ a{
 /* #region--------actionbar */
 #actionbar{
     background-color: var(--bg-actionbar);
-    height: 42px;
+    height: 68px;
 }
 /* #endregion--------actionbar */
 
