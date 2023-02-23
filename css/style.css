@@ -172,9 +172,14 @@ a{
    padding: .3rem;
    text-align: center;
 }
-#sidebar object{
-   width: 70%;
-   color: var(--text-1-sidebar);
+#sidebar .logo_small{
+    width: 75%;
+    padding: .2rem;
+    fill: var(--bg-stabilo);
+ }
+#sidebar img{
+   width: 50%;
+   fill: var(--text-1-sidebar);
 }
 #sidebar > .sidebar_top{
     height: calc(100% - 43px);
