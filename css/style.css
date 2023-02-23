@@ -30,7 +30,7 @@ img{
 /* #endregion--------commons */
 
 /* #region--------utilities */
-.das {border: 1px dashed var(--bg-stabilo);}
+.dash {border: 1px dashed var(--bg-stabilo);}
 .col_2{
     width: calc(100% / 12 * 2);
 }
@@ -165,6 +165,17 @@ a{
     width: 50px;
     overflow:hidden;
 }
+#sidebar .extended{
+    display: none;
+}
+#sidebar .areas {
+   padding: .3rem;
+   text-align: center;
+}
+#sidebar object{
+   width: 70%;
+   color: var(--text-1-sidebar);
+}
 #sidebar > .sidebar_top{
     height: calc(100% - 43px);
 }
@@ -224,7 +235,12 @@ a{
     #sidebar{
         width: 230px;
     }
-      
+    #sidebar .extended{
+        display: initial;
+    }
+    #sidebar .lite{
+        display: none;
+    }
 }
 
 @media screen and (min-width:878px){/* -- medium -- */
