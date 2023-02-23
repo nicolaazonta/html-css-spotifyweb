@@ -173,22 +173,28 @@ a{
     height: 43px;
 }
 
+.sidebar_top>.extended_bar{
+    height: 270px;
+}
+.sidebar_top>.playlists{
+    height: calc(100% - 270px);
+    overflow:auto;
+    
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+background:var(--bg-actionbar); 
+}
+::-webkit-scrollbar-thumb {
+background: var(--text-1-content) ; 
+}
+::-webkit-scrollbar-thumb:hover {
+background: var(--bg-stabilo); 
+}
 
-.sidebar_top .extended_bar a{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: .3rem 1rem;
-}
-.sidebar_top .logo_big{
-    padding-bottom: 1rem;
-}
-.sidebar_top svg{
-    width: 10rem;
-}
-.sidebar_top .extended_bar h4{
-    padding: 0 .25rem;
-}
+
 
 
 
@@ -214,6 +220,58 @@ a{
 #sidebar .arrow_user{
     text-align: center;
 }
+#sidebar .extended_bar{
+    display: none;
+}
+
+.sidebar_top .extended_bar a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .3rem 1rem;
+}
+.sidebar_top .logo_big{
+    padding-bottom: 1rem;
+}
+.sidebar_top svg{
+    width: 10rem;
+}
+.sidebar_top .extended_bar h4{
+    padding: 0 .25rem;
+}
+.sidebar_top .playlists{
+    color: var(--text-1-sidebar);
+    margin-left: 1.4rem;
+    margin-top: 2rem;
+    display: none;
+}
+.sidebar_top .playlists h4{
+    font-size: .85rem;
+    color: var(--text-light);
+}
+.playlists .new_playlist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: .5rem;
+}
+.sidebar_top .playlists a{
+    padding: .25rem 0;
+}
+.playlists span{
+    padding: 0  .25rem;
+}
+.playlist_list{
+    margin-left: -.25rem;
+    font-size: .8rem;
+    padding: .5rem 0;
+}
+.playlist_list li{
+    padding: .4rem 0;
+}
+
+
+
 .sidebar_bottom img{
     width: 1.5rem;
     padding: 0 .1rem;
@@ -223,9 +281,6 @@ a{
 .sidebar_bottom .dwnld_icon{
     margin-left: -.25rem;
     max-width: 1rem;
-}
-#sidebar .extended_bar{
-    display: none;
 }
 .sidebar_bottom .extended_bar li:first-child,
 .sidebar_bottom .extended_bar li:last-child{
@@ -325,6 +380,9 @@ a{
     }
     #sidebar .icon{
         max-width: 15%;
+    }
+    .sidebar_top .playlists{
+        display:inherit;
     }
 }
 
