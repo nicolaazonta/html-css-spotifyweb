@@ -174,14 +174,20 @@ a{
 }
 
 
-.sidebar_top .extended_bar li{
+.sidebar_top .extended_bar a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: .3rem 1rem;
 }
+.sidebar_top .logo_big{
+    padding-bottom: 1rem;
+}
 .sidebar_top svg{
     width: 10rem;
+}
+.sidebar_top .extended_bar h4{
+    padding: 0 .25rem;
 }
 
 
