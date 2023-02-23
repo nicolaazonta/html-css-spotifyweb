@@ -165,27 +165,45 @@ a{
     width: 50px;
     overflow:hidden;
 }
-#sidebar .extended{
-    display: none;
-}
-#sidebar .areas {
-   padding: .3rem;
-   text-align: center;
-}
-#sidebar .logo_small{
-    width: 75%;
-    padding: .2rem;
-    fill: var(--bg-stabilo);
- }
-#sidebar img{
-   width: 50%;
-   fill: var(--text-1-sidebar);
-}
 #sidebar > .sidebar_top{
     height: calc(100% - 43px);
 }
 #sidebar > .sidebar_bottom{
     height: 43px;
+}
+#sidebar .extended_bar{
+    display: none;
+    color: #ADFF2F;
+}
+#sidebar .areas {
+    padding: .3rem;
+    text-align: center;
+}
+#sidebar .spotify_logo_small{
+    width: 75%;
+    padding: .2rem;
+    fill: var(--text-light);
+}
+#sidebar svg{
+   width: 50%;
+   fill: var(--text-1-sidebar);
+}
+#sidebar .sidebar_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#sidebar .arrow_user{
+    text-align: center;
+}
+.sidebar_bottom img{
+    width: 1.5rem;
+    padding: 0 .1rem;
+    border-radius: 1.2rem;
+    background-color: var(--text-1-sidebar);
+}
+.sidebar_bottom .dwnld_icon{
+    margin-left: -.25rem;
 }
 /* #endregion--------sidebar */
 
@@ -240,10 +258,10 @@ a{
     #sidebar{
         width: 230px;
     }
-    #sidebar .extended{
+    #sidebar .extended_bar{
         display: initial;
     }
-    #sidebar .lite{
+    #sidebar .lite_bar{
         display: none;
     }
 }
