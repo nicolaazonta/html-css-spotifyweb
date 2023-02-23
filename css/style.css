@@ -30,7 +30,7 @@ img{
 /* #endregion--------commons */
 
 /* #region--------utilities */
-.dash{border: 1px dashed var(--bg-stabilo);}
+.dash {border: 1px dashed var(--bg-stabilo);}
 .col_2{
     width: calc(100% / 12 * 2);
 }
@@ -116,9 +116,17 @@ a{
     justify-content: center;
     text-align: center;
 }
-.recently_section h2{
+.recently_section h2,
+.created h2,
+.artists h2{
     color: white;
-    margin-left: .5rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+.recently_section .row,
+.created .row,
+.artists .row{
+    padding-bottom: 1.4rem;
 }
 .disc_card{
     font-size: .6rem;
@@ -130,10 +138,12 @@ a{
 }
 .disc_card .song,.artist{
     padding-top: .3rem;
+    text-align: center;
 }
 .disc_card .song{
     color: var(--text-light);
 }
+.
 
 
 /* #endregion--------content */
