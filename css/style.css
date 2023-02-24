@@ -113,7 +113,7 @@ a{
     font-weight: 200;
 }
 
-.card_text:hover .card_text span{
+.card_text span:hover {
     color: var(--bg-stabilo);
 }
 
