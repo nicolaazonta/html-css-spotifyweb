@@ -315,10 +315,46 @@ background: var(--text-1-content);
     justify-content: space-between;
 }
 .action_left .left_block{
+    justify-self: flex-start;
+    display: flex;
+    align-items: center;
+}
+.action_left .left_block img{
+    height: 40%;
+    margin-left: .5rem;
+}
+.action_left .details_1,.details_2,.details_3{
+    padding-left: .25rem;
+    text-align: left;
+}
+.action_left .details_2,.details_3{
+    font-size: .6rem;
+}
+.action_left .details_1{
+    font-size: .8rem;
+    color: var(--text-light);
+}
+.action_left .left_block .right_block a{
+    margin: -.3rem 0;
+}
+
+
+
+
+.action_left .left_block{
     flex-grow: 1;
 }
 .action_left .right_block{
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.action_left .right_block .top_block,
+.action_left .right_block .bottom_block{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .action_right{
@@ -391,6 +427,18 @@ background: var(--text-1-content);
     .sidebar_top .playlists{
         display:inherit;
     }
+    .action_left .left_block img{
+        height: 50%;
+    }
+    .action_left .details_2{
+        display: none;
+    }
+    .action_left .left_block .right_block a{
+        margin: -.1rem 0;
+    }
+    .action_left .details_1{
+        padding-left: .3rem;
+    }
 }
 
 @media screen and (min-width:878px){/* -- medium -- */
@@ -421,6 +469,27 @@ background: var(--text-1-content);
     .action_left,.action_right{
         width: 230px;
     }
+    .action_left>.right_block{
+        flex-direction: row;
+    }
+    .action_left .right_block .top_block,
+    .action_left .right_block .bottom_block{
+        flex-basis: 50%;
+        align-items: center;
+    }
+    .action_left .left_block{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .action_left .left_block img{
+        height: 60%;
+    }
+    .action_left .details_1{
+        padding-left: .5rem;
+    }
+   
+
+}
     
 
 @media screen and (min-width:1440px){/* -- large -- */
