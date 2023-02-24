@@ -149,10 +149,27 @@ a{
 .disc_card .song{
     color: var(--text-light);
 }
-
-
 .artists .circle{
     border-radius: 50%;
+}
+
+
+.disc_preview{
+    position: relative;
+}
+.play_hover{
+    display: none;
+    position: absolute;
+    top: calc(50% - 24.4px);
+    left: calc(50% - 18px);
+    color: var(--bg-stabilo);
+    font-size: 3rem;
+}
+.disc:hover{
+    filter: brightness(50%);
+}
+.disc:hover + .play_hover {
+    display: inherit;
 }
 
 
@@ -405,14 +422,14 @@ background: var(--text-1-content);
     width: 150px;
 }
 .action_middle>.top_block{
-    font-size: .8rem;
+    font-size: 1rem;
 }
 .play_btn{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 .action_middle>.bottom_block{
     color: var(--text-light);
-    font-size: .4rem;
+    font-size: .7rem;
     font-weight: 100;
 }
 .block_bar{
