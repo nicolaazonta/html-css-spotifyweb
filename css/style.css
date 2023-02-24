@@ -112,6 +112,15 @@ a{
     font-size: .5rem;
     font-weight: 200;
 }
+
+.card_text:hover .card_text span{
+    color: var(--bg-stabilo);
+}
+
+
+
+
+
 .menu_content .row{
     justify-content: center;
     text-align: center;
@@ -149,7 +158,7 @@ a{
 .disc_card .song{
     color: var(--text-light);
 }
-.artists .circle{
+.artists .disc_card .disc{
     border-radius: 50%;
 }
 
@@ -171,6 +180,9 @@ a{
 }
 .disc_preview:hover + .play_hover{
     display: inherit;
+}
+.disc_preview:hover > i{
+    display: block;
 }
 
 
