@@ -116,7 +116,20 @@ a{
 .card_text span:hover {
     color: var(--bg-stabilo);
 }
-
+.card_text:active .marker {
+    border-color: var(--text-light);
+}
+.card_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_text .marker {
+    border-bottom: 2px solid var(--bg-content);
+    width: 2rem;
+    height: 1px;
+    margin: 3px;
+}
 
 
 
