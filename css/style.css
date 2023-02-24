@@ -188,17 +188,11 @@ a{
 background:var(--bg-actionbar); 
 }
 ::-webkit-scrollbar-thumb {
-background: var(--text-1-content) ; 
+background: var(--bg-stabilo) ; 
 }
 ::-webkit-scrollbar-thumb:hover {
-background: var(--bg-stabilo); 
+background: var(--text-1-content); 
 }
-
-
-
-
-
-
 #sidebar .areas {
     padding: .3rem;
     text-align: center;
@@ -223,7 +217,6 @@ background: var(--bg-stabilo);
 #sidebar .extended_bar{
     display: none;
 }
-
 .sidebar_top .extended_bar a{
     display: flex;
     justify-content: flex-start;
@@ -269,9 +262,6 @@ background: var(--bg-stabilo);
 .playlist_list li{
     padding: .4rem 0;
 }
-
-
-
 .sidebar_bottom img{
     width: 1.5rem;
     padding: 0 .1rem;
@@ -305,16 +295,6 @@ background: var(--bg-stabilo);
     color: var(--text-light);
     padding-left: .5rem;
 }
-
-
-
-
-
-
-
-
-
-
 /* #endregion--------sidebar */
 
 /* #endregion--------topsection */
@@ -323,6 +303,33 @@ background: var(--bg-stabilo);
 #actionbar{
     background-color: var(--bg-actionbar);
     height: 68px;
+    display: flex;
+}
+.action_left,.action_middle,.action_right
+.action_left,.right_block{
+    height: 100%;
+}
+.action_left{
+    justify-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.action_left .left_block{
+    flex-grow: 1;
+}
+.action_left .right_block{
+    width: 20%;
+}
+
+.action_right{
+    justify-self: flex-end;
+}
+.action_left,.action_right{
+    width: 30%;
+}
+.action_middle{
+    justify-self: center;
+    flex-grow: 1;
 }
 /* #endregion--------actionbar */
 
@@ -411,7 +418,10 @@ background: var(--bg-stabilo);
     .col_md_12{
         width: calc(100% / 12 * 12);
     }
-}
+    .action_left,.action_right{
+        width: 230px;
+    }
+    
 
 @media screen and (min-width:1440px){/* -- large -- */
     .col_lg_2{
