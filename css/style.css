@@ -78,6 +78,12 @@ a{
 /* #endregion--------utilities */
 
 /* #region--------topsection */
+
+
+
+#topsection a:hover{
+    color: var(--text-light);
+}
 #topsection{
     height: calc(100vh - 68px);
     display: flex;
@@ -101,10 +107,18 @@ a{
     color: var(--text-light);
     border-radius: 2rem;
     padding: .4rem 1.5rem;
-    margin-right: .5rem;
+    margin-right: .7rem;
     align-self: center;
     justify-self: flex-end;
     font-size: .7rem;
+    transition-property: all;
+    transition-duration: .5s;
+}
+#content #banner .button:hover{
+    transform: scale(1.2);
+    margin-right: 2rem;
+    border-color: var(--bg-stabilo);
+    color: var(--bg-stabilo);
 }
 #main_content{
     height: calc(100% - 50px);
@@ -267,8 +281,29 @@ background: var(--text-1-content);
     padding: .3rem 1rem;
 }
 .sidebar_top .logo_big{
-    padding-bottom: 1rem;
+    padding-bottom: 1.2rem;
 }
+#topsection .logo_big svg{
+    fill: var(--text-light);
+    width: 15rem;
+}
+#topsection .logo_big a:hover .spotify_logo_big{
+    fill: var(--bg-stabilo);
+}
+
+#topsection .spotify_logo_small{
+    fill: var(--text-light);
+}
+#topsection .spotify_logo_small:hover{
+    fill: var(--bg-stabilo);
+}
+#topsection svg:hover{
+    fill: var(--bg-stabilo);
+}
+
+
+
+
 .sidebar_top svg{
     width: 10rem;
 }
@@ -343,6 +378,9 @@ background: var(--text-1-content);
 /* #endregion--------topsection */
 
 /* #region--------actionbar */
+#actionbar a:hover{
+    color: var(--bg-stabilo);
+}
 #actionbar{
     background-color: var(--bg-actionbar);
     height: 68px;
@@ -620,6 +658,9 @@ background: var(--text-1-content);
     .action_middle>.bottom_block>.block_bar{
         width: 90%;
     }
+    #main_content .card_text{
+        font-size: .65rem;
+    }
 }
     
 
@@ -647,6 +688,9 @@ background: var(--text-1-content);
     }
     .action_middle>.bottom_block{
         width: 500px;
+    }
+    #main_content .card_text{
+        font-size: .75rem;
     }
 }
 
