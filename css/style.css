@@ -164,11 +164,12 @@ a{
     left: calc(50% - 18px);
     color: var(--bg-stabilo);
     font-size: 3rem;
+    z-index: 100000;
 }
-.disc:hover{
+.disc_preview:hover{
     filter: brightness(50%);
 }
-.disc:hover + .play_hover {
+.disc_preview:hover + .play_hover{
     display: inherit;
 }
 
